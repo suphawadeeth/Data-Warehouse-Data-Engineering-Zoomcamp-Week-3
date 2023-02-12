@@ -117,15 +117,15 @@ Steps:
 
 ### What are the different between those two types of table?
 
-  #### External Table in Big Query
-        - Instead of create a table and store all the data in that table inside the Big Query, we create an external table.
-        - External table is a table definition (which you will use to query data). 
-          But all the data will be stored outside Big Query. In this case, it's stored in GCS.
-        - Even our data is not in the Big Query but we can still query them using all the tool e.g. SQL. This concept is called "federated query".
+#### External Table in Big Query
+- Instead of create a table and store all the data in that table inside the Big Query, we create an external table.
+- External table is a table definition (which you will use to query data). 
+  But all the data will be stored outside Big Query. In this case, it's stored in GCS.
+- Even our data is not in the Big Query but we can still query them using all the tool e.g. SQL. This concept is called "federated query".
 
-  #### Native Table
-        - Native table is a table that stores all data inside Big Query
-        - More expensive than using external table 
+#### Native Table
+- Native table is a table that stores all data inside Big Query
+- More expensive than using external table 
         
 
 ### Step 1: Create Dataset
@@ -183,9 +183,12 @@ You can now using SQl tool to query data.
 Refering to Homework Week 3
 
 Here are links to some useful query:
+
 [Big Query SQL](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_3_data_warehouse/big_query.sql)
+
+
 [Big Query Homework](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_3_data_warehouse/big_query_hw.sql)
 
 
 
-==========WORK IN PROGRESS==========
+==========Thank You==========
