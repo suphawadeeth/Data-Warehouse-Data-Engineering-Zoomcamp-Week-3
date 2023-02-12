@@ -115,7 +115,7 @@ Steps:
  2. Create table (2 options: **Native table and External table**)
  3. Load data into the table
 
-### What are the different between those two types of table?
+### What are the different between those two types of tables?
 
 #### External Table in Big Query
 - Instead of create a table and store all the data in that table inside the Big Query, we create an external table.
@@ -134,7 +134,7 @@ Steps:
   On Terminal, run
 
 ```
-gsutil ls -Lb gs://prefect_de_zoom
+gsutil ls -Lb gs://<your bucket name>
 ```
 
 Back to your gcloud,
@@ -148,8 +148,12 @@ Go to >> Big Query
 
  #### How to Create an External Table
  On your [gcloud/bigquery](https://console.cloud.google.com/bigquery)
-	- Click + sign (which is "compose new query")
-	- Run the query below to creat an **external table** 
+ 
+- Click + sign (which is "compose new query")
+	
+
+- Run the query below to creat an **external table** 
+	
 
 ```
 -- Creating external table referring to gcs path
@@ -162,10 +166,17 @@ OPTIONS (
 
 #### How to Create a Native Table & Load Data into Table
  On your [gcloud/bigquery](https://console.cloud.google.com/bigquery)
+ 
  - Click +ADD DATA
+ 
  - Select Google Cloud Storage as Source
+ 
    - Browse file that you want to work on or write path to file as follow, to gather multiple files into a table
+     
+     
      ```<your bucket name>/path/to/file/fhv_tripdata_2019-*.csv``` 
+     
+     
    - Define dataset name, table name
    - Select table type: Native Table
    - Create table
@@ -177,7 +188,7 @@ OPTIONS (
 
 One you have your dataset & table.
 
-You can now using SQl tool to query data.
+You can now using SQL tool to query data.
 
 
 Refering to Homework Week 3
